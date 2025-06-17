@@ -1,0 +1,35 @@
+ /* Default: no padding-left */
+ .custom-pl-lg {
+   padding-left: 0;
+ }
+
+ /* Medium screen and up (≥768px) */
+ @media (min-width: 768px) {
+   .custom-pl-lg {
+     padding-left: 30rem;
+   }
+ }
+
+ /* Large screen and up (≥992px) */
+ @media (min-width: 992px) {
+   .custom-pl-lg {
+     padding-left: 58rem;
+   }
+ }
+
+ .TGreen {
+   background-color: #00b075;
+   color: white;
+ }
+
+ .navbar {
+   background-color: #00b075;
+ }
+
+ .text-TGreen {
+   color: #00b075;
+ }
+
+ .custom-shadow {
+   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.8));
+ }
