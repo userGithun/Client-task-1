@@ -17,8 +17,8 @@ function Services() {
                                     <nav className="d-inline-block" aria-label="breadcrumb text-center">
                                         <ol className="breadcrumb justify-content-center">
                                             <li className="breadcrumb-item"><Link to={'/'} >Home</Link></li>
-                                            <li className="breadcrumb-item"><Link to={'/about'} >About US</Link></li>
-                                            <li className="breadcrumb-item active" aria-current="page"> Services </li>
+                                            <li className="breadcrumb-item"><Link to={'/service'} >Services</Link></li>
+                                            <li className="breadcrumb-item active" aria-current="page">Contact us</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -60,8 +60,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaObjectUngroup style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaObjectUngroup style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Manage Job Ads</h5>
@@ -79,8 +79,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaTelegramPlane style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaTelegramPlane style={{ fontSize: '24px' }} />
 
                                     </div>
                                     <div className="mt-4">
@@ -99,8 +99,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaDesktop style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaDesktop style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Display Jobs</h5>
@@ -118,8 +118,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaRocket style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaRocket style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>For Agencies</h5>
@@ -137,8 +137,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaHistory style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaHistory style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Quick Support</h5>
@@ -156,8 +156,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaBookmark style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaBookmark style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Bookmark Jobs</h5>
@@ -175,8 +175,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaLayerGroup style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaLayerGroup style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Creative Design</h5>
@@ -194,8 +194,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaAnchor style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaAnchor style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Stratagy & Research</h5>
@@ -213,8 +213,8 @@ function Services() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaChartBar style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaChartBar style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Real-time Analytics</h5>

@@ -11,13 +11,13 @@ function Contact() {
                     <div className="row justify-content-center">
                         <div className="col-md-6">
                             <div className="text-center text-white">
-                                <h3 className="mb-4">Contact</h3>
+                                <h3 className="mb-4">Contact Us</h3>
                                 <div className="page-next">
                                     <nav className="d-inline-block" aria-label="breadcrumb text-center">
                                         <ol className="breadcrumb justify-content-center">
                                             <li className="breadcrumb-item"><Link to={'/'}>Home</Link></li>
-                                            <li className="breadcrumb-item"><Link to={'/service'} >Services</Link></li>
-                                            <li className="breadcrumb-item active" aria-current="page"> Contact </li>
+                                            <li className="breadcrumb-item"><Link to={'/contact'} >Contact</Link></li>
+                                            <li className="breadcrumb-item active" aria-current="page"> Contact Us </li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -50,7 +50,7 @@ function Contact() {
                         <div className="col-lg-6">
                             <div className="section-title mt-4 mt-lg-0">
                                 <h3 className="title">Get in touch</h3>
-                                <p className="text-muted">Start growing with SR Consultancy that offers every tool you need to boost reach, attract traffic, and connect.</p>
+                                <p className="text-muted">Start growing with <span className='text-TGreen'>SR Consultancy</span> that offers every tool you need to boost reach, attract traffic, and connect.</p>
                                 <form method="post" onsubmit="return validateForm()" className="contact-form mt-4" name="myForm" id="myForm">
                                     <span id="error-msg"></span>
                                     <div className="row">
@@ -105,15 +105,27 @@ function Contact() {
                                         <i className="uil uil-map-marker"></i>
                                     </div>
                                     <div className="flex-grow-1 ms-2">
-                                        <p className="mb-0">474001 BHADORIYA MARKET,GovindPuri Gwalior(M.P)</p>
+                                        <p className="mb-0"><span className='text-TGreen'>1.</span> Sector 16 b , greater noida , uttar pradesh 201306
+                                        </p>
                                     </div>
                                 </div>
+                                <div className="d-flex text-muted align-items-center mt-2">
+                                    <div className="flex-shrink-0 fs-22 text-TGreen">
+                                        <i className="uil uil-map-marker"></i>
+                                    </div>
+                                    <div className="flex-grow-1 ms-2">
+                                        <p className="mb-0"><span className='text-TGreen'>2.</span> Vikaspuri , new delhi , 110059
+                                        </p>
+                                    </div>
+                                </div>
+
                                 <div className="d-flex text-muted align-items-center mt-2">
                                     <div className="flex-shrink-0 fs-22 text-TGreen">
                                         <i className="uil uil-envelope"></i>
                                     </div>
                                     <div className="flex-grow-1 ms-2">
-                                        <p className="mb-0">Pninfosys@gmail.com</p>
+                                        <p className="mb-0">admin@srwebconsultancy.in
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="d-flex text-muted align-items-center mt-2">
@@ -121,7 +133,8 @@ function Contact() {
                                         <i className="uil uil-phone-alt"></i>
                                     </div>
                                     <div className="flex-grow-1 ms-2">
-                                        <p className="mb-0">+91 7000846823</p>
+                                        <p className="mb-0">+91 8700832603
+                                        </p>
                                     </div>
                                 </div>
                             </div>

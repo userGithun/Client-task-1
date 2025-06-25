@@ -1,62 +1,75 @@
 import React from 'react'
-import { FaBookmark, FaDesktop, FaHistory, FaLayerGroup, FaAnchor, FaRocket, FaChartBar, FaTelegramPlane, FaObjectUngroup, FaDiscord, FaShoppingBag, FaShoppingBasket, FaSuitcase, FaUser, FaUserAlt, FaUserAltSlash, FaUserAstronaut, FaUserCheck, FaUserGraduate, FaUserMd, FaUserSecret, FaUserTie, FaHospital, FaImage, FaRegImages, FaAndroid } from 'react-icons/fa';
+import { FaBookmark, FaDesktop, FaHistory, FaLayerGroup, FaAnchor, FaRocket, FaChartBar, FaTelegramPlane, FaObjectUngroup, FaSuitcase, FaUserTie, FaHospital, FaRegImages, FaAndroid } from 'react-icons/fa';
 import '../index.css'
 import { Link } from 'react-router-dom'
-import { FaBagShopping, FaDisplay, FaImagePortrait, FaUserGear, FaUserPen } from 'react-icons/fa6';
-
+import { FaDisplay } from 'react-icons/fa6';
+import bannerVideo from '/src/assets/video/banner.mp4';
+import processImg from '/src/assets/images/process-01.png';
+import processImg2 from '/src/assets/images/process-02.png';
+import processImg3 from '/src/assets/images/process-03.png';
 
 function Home() {
     return (
         <>
 
-            {/* Banner start */}
-            <div className="main-content">
-                <div className="page-content">
-                    {/* <!-- START HOME --> */}
-                    <section className="bg-home2" id="home">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-7">
-                                    <div className="mb-4 pb-3 me-lg-5">
-                                        <h6 className="sub-title">We have 150,000+ live jobs</h6>
-                                        <h1 className="display-5 fw-semibold mb-3">Find your dream jobs with <span className="text-TGreen fw-bold">SR Web Services</span></h1>
-                                        <p className="lead text-muted mb-0">Find jobs, create trackable resumes and enrich your applications.Carefully crafted after analyzing the needs of different industries.</p>
-                                    </div>
+            {/* Banner Start */}
+            <div className="position-relative w-100" style={{ height: "100vh", overflow: "hidden" }}>
+                {/* Background Video Fullscreen */}
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1"
+                >
+                    <source src={bannerVideo} type="video/mp4" />
+                </video>
 
-                                </div>
-                                {/* <!--end col--> */}
-                                <div className="col-lg-5">
-                                    <div className="mt-5 mt-md-0">
-                                        <img src="/src/assets/images/process-02.png" alt="" className="home-img" />
-                                    </div>
-                                </div>
-                                {/* <!--end col--> */}
+                {/* Dark overlay */}
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-0"></div>
+
+                {/* Content */}
+                <div className="container position-relative z-1 d-flex flex-column justify-content-center align-items-center text-white h-100 px-3 text-center text-lg-start">
+                    <div className="row w-100 justify-content-center align-items-center g-4">
+                        {/* Left Content */}
+                        <div className="col-12 col-lg-6">
+                            <h1 className="display-5 fw-bold">We Believe in You.</h1>
+                            <h1 className="display-5 fw-bold">We Work With You.</h1>
+                            <h1 className="display-5 fw-bold mb-3">We Get You Hired</h1>
+                            <div className="TGreen mb-3" style={{ height: "4px", width: "50px" }}></div>
+                            <p className="lead text-white" style={{ textAlign: "justify" }}>
+                                We believe great results come from great relationships. That’s why we focus on
+                                understanding both our clients’ needs and our candidates’ goals. With years of
+                                experience across diverse industries, we bring talent and businesses together in
+                                ways that create lasting value. For us, success means not just making a placement — but making the right one.
+                            </p>
+                            <div className="d-flex gap-3 justify-content-center justify-content-lg-start mt-4 flex-wrap">
+                                <button className="btn TGreen px-4">Looking to hire</button>
+                                <button className="btn TGreen px-4">Looking for a job</button>
                             </div>
-                            {/* <!--end row--> */}
                         </div>
-                        {/* <!--end container--> */}
-                    </section>
-                    {/* <!-- End Home --> */}
 
-                    {/* <!-- START SHAPE --> */}
-                    <div className="position-relative">
-                        <div className="shape">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="150" preserveAspectRatio="none" viewBox="0 0 1440 220">
-                                <g mask="url(&quot;#SvgjsMask1004&quot;)" fill="none">
-                                    <path d="M 0,213 C 288,186.4 1152,106.6 1440,80L1440 250L0 250z" fill="rgba(255, 255, 255, 1)"></path>
-                                </g>
-                                <defs>
-                                    <mask id="SvgjsMask1004">
-                                        <rect width="1440" height="250" fill="#ffffff"></rect>
-                                    </mask>
-                                </defs>
-                            </svg>
+                        {/* Right Form */}
+                        <div className="col-12 col-lg-4">
+                            <div className="bg-white text-dark rounded-4 p-4 shadow-lg w-100">
+                                <h5 className="fw-semibold mb-3 text-center text-lg-start">Job Search</h5>
+                                <form className="d-flex flex-column gap-3">
+                                    <select className="form-select">
+                                        <option>Specialisation</option>
+                                    </select>
+                                    <input type="text" placeholder="Location" className="form-control" />
+                                    <input type="text" placeholder="Keyword" className="form-control" />
+                                    <button type="submit" className="btn TGreen w-100">
+                                        Search Jobs
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    {/* <!-- END SHAPE --> */}
                 </div>
             </div>
             {/* Banner End */}
+
 
             {/* <!-- START CATEGORY --> */}
             <section className="section">
@@ -151,7 +164,7 @@ function Home() {
                         <div className="col-lg-3 col-md-6 mt-4 pt-2">
                             <div className="popu-category-box rounded text-center">
                                 <div className="popu-category-icon icons-md">
-                                   
+
                                     <FaTelegramPlane className='text-TGreen' />
                                 </div>
                                 <div className="popu-category-content mt-4">
@@ -182,7 +195,7 @@ function Home() {
                         <div className="col-lg-3 col-md-6 mt-4 pt-2">
                             <div className="popu-category-box rounded text-center">
                                 <div className="popu-category-icon icons-md">
-                                    
+
                                     <FaAndroid className='text-TGreen' />
                                 </div>
                                 <div className="popu-category-content mt-4">
@@ -239,8 +252,8 @@ function Home() {
                                         <textarea placeholder="Comment" className="form-control my-2" rows="2"></textarea>
 
                                         <div className="d-flex justify-content-between mt-3">
-                                            <button className="btn btn-success">Submit</button>
-                                            <button type="reset" className="btn btn-outline-success">Reset</button>
+                                            <button className="btn TGreen">Submit</button>
+                                            <button type="reset" className="btn btn-outline-success ">Reset</button>
                                         </div>
                                     </form>
                                 </div>
@@ -248,29 +261,58 @@ function Home() {
 
                             {/* Current Opening */}
                             <div className="col-md-4">
-                                <div className="p-4 border rounded">
-                                    <h5 className="TGreen text-white text-center py-2">Current Opening</h5>
+                                <div className="p-4 border rounded text-white">
+                                    <h5 className="TGreen text-white text-center py-2">Current Openings</h5>
 
-                                    <div className="my-3">
-                                        <p><strong>Experience:</strong> 2-4 Years</p>
-                                        <p><strong>Location:</strong> Location - Noida</p>
-                                        <hr />
-                                    </div>
+                                    <div className="scroll-box text-black mt-3">
+                                        <div className="scroll-content">
+                                            <div className="scroll-inner">
+                                                {/* ✅ Original Content */}
+                                                <div className="my-3">
+                                                    <p><strong>Experience:</strong> 2-4 Years</p>
+                                                    <p><strong>Location:</strong> Noida</p>
+                                                    <hr />
+                                                </div>
 
-                                    <div className="my-3">
-                                        <p><strong>Designation:</strong> SEO Executive</p>
-                                        <p><strong>Experience:</strong> 1-2 Years</p>
-                                        <p><strong>Location:</strong> Location - Noida</p>
-                                        <hr />
-                                    </div>
+                                                <div className="my-3">
+                                                    <p><strong>Designation:</strong> SEO Executive</p>
+                                                    <p><strong>Experience:</strong> 1-2 Years</p>
+                                                    <p><strong>Location:</strong> Noida</p>
+                                                    <hr />
+                                                </div>
 
-                                    <div className="my-3">
-                                        <p><strong>Designation:</strong> Dot Net Developer</p>
-                                        <p><strong>Experience:</strong> 2-4 Years</p>
-                                        <p><strong>Location:</strong> Location - Noida</p>
+                                                <div className="my-3">
+                                                    <p><strong>Designation:</strong> Dot Net Developer</p>
+                                                    <p><strong>Experience:</strong> 2-4 Years</p>
+                                                    <p><strong>Location:</strong> Noida</p>
+                                                </div>
+
+                                                {/* ✅ Duplicate content for seamless loop */}
+                                                <div className="my-3">
+                                                    <p><strong>Experience:</strong> 2-4 Years</p>
+                                                    <p><strong>Location:</strong> Noida</p>
+                                                    <hr />
+                                                </div>
+
+                                                <div className="my-3">
+                                                    <p><strong>Designation:</strong> SEO Executive</p>
+                                                    <p><strong>Experience:</strong> 1-2 Years</p>
+                                                    <p><strong>Location:</strong> Noida</p>
+                                                    <hr />
+                                                </div>
+
+                                                <div className="my-3">
+                                                    <p><strong>Designation:</strong> Dot Net Developer</p>
+                                                    <p><strong>Experience:</strong> 2-4 Years</p>
+                                                    <p><strong>Location:</strong> Noida</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+
 
                             {/* Post Your Resume */}
                             <div className="col-md-4">
@@ -284,7 +326,7 @@ function Home() {
                                         <input type="file" className="form-control my-2" />
 
                                         <div className="d-flex justify-content-between mt-3">
-                                            <button className="btn btn-success">Submit</button>
+                                            <button className="btn TGreen">Submit</button>
                                             <button type="reset" className="btn btn-outline-success">Reset</button>
                                         </div>
                                     </form>
@@ -353,13 +395,13 @@ function Home() {
                         <div className="col-lg-6">
                             <div className="tab-content" id="v-pills-tabContent">
                                 <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                    <img src="/src/assets/images/process-01.png" alt="" className="img-fluid" />
+                                    <img src={processImg} alt="" className="img-fluid" />
                                 </div>
                                 <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                    <img src="/src/assets/images/process-02.png" alt="" className="img-fluid" />
+                                    <img src={processImg2} alt="" className="img-fluid" />
                                 </div>
                                 <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                    <img src="/src/assets/images/process-03.png" alt="" className="img-fluid" />
+                                    <img src={processImg3} alt="" className="img-fluid" />
                                 </div>
                             </div>
                         </div>
@@ -387,8 +429,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaObjectUngroup style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaObjectUngroup style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Manage Job Ads</h5>
@@ -406,8 +448,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaTelegramPlane style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaTelegramPlane style={{ fontSize: '24px' }} />
 
                                     </div>
                                     <div className="mt-4">
@@ -426,8 +468,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaDesktop style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaDesktop style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Display Jobs</h5>
@@ -445,8 +487,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaRocket style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaRocket style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>For Agencies</h5>
@@ -464,8 +506,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaHistory style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaHistory style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Quick Support</h5>
@@ -483,8 +525,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaBookmark style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaBookmark style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Bookmark Jobs</h5>
@@ -502,8 +544,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaLayerGroup style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaLayerGroup style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Creative Design</h5>
@@ -521,8 +563,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaAnchor style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaAnchor style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Stratagy & Research</h5>
@@ -540,8 +582,8 @@ function Home() {
                         <div className="col-lg-4 col-md-6">
                             <div className="card service-box mt-4">
                                 <div className="card-body p-4">
-                                    <div className="service-icon icons-md">
-                                        <FaChartBar style={{ color: '#00b074', fontSize: '24px' }} />
+                                    <div className="service-icon icons-md text-TGreen">
+                                        <FaChartBar style={{ fontSize: '24px' }} />
                                     </div>
                                     <div className="mt-4">
                                         <h5>Real-time Analytics</h5>

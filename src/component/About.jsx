@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../index.css'
+import aboutImage from '/src/assets/images/about/about.jpg';
 
 function About() {
     return (
@@ -16,8 +17,8 @@ function About() {
                                     <nav className="d-inline-block" aria-label="breadcrumb text-center">
                                         <ol className="breadcrumb justify-content-center">
                                             <li className="breadcrumb-item"><Link to={'/'}>Home</Link></li>
-                                            <li className="breadcrumb-item"><Link href="javascript:void(0)">About Us</Link></li>
-                                            <li className="breadcrumb-item active" aria-current="page">Services</li>
+                                            <li className="breadcrumb-item"><Link href="javascript:void(0)">About</Link></li>
+                                            <li className="breadcrumb-item active" aria-current="page">Clients</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -50,22 +51,34 @@ function About() {
                         <div className="col-lg-6">
                             <div className="section-title me-lg-5">
                                 <h6 className="sub-title">About Us</h6>
-                                <h2 className="title mb-4">Why <span className="text-warning fw-bold">35,000+</span> People Trust On <br /> SR Web Services?</h2>
+                                <h2 className="title mb-4">Your Partner in Recruitment Success with
+                                    <span className='text-TGreen'> SR Web Services</span></h2>
 
-                                <p className="text-muted">Start building your digital presence with SR Consultancy Web Services – your partner for impactful strategies, web development, and seamless digital growth. We create innovative experiences that help businesses stand out and thrive in a competitive online space with custom-built solutions for every need.</p>
+                                <p className="text-muted text-justify">At SR Web Services, we bring years of industry expertise and a passion for connecting people. Our team of recruitment specialists is dedicated to matching the right talent with the right role—fast, efficiently, and with integrity.
+                                    <br /><br />
+                                    We serve startups, SMEs, and enterprise clients across sectors like [e.g., IT, healthcare, finance, manufacturing]. Whether you're hiring full-time, contract, or remote staff, we deliver results that grow your business.
+
+                                </p>
 
                                 <div className="row mt-4 pt-2">
                                     <div className="col-md-6">
                                         <ul className="list-unstyled about-list text-muted mb-0 mb-md-3">
-                                            <li> Digital Marketing Solutions</li>
-                                            <li> Our Talented & Experienced Marketing Agency</li>
-                                            <li> Creative Design</li>
-                                            <li> New jobs Innovation</li>
+                                            <li>Tailored recruitment strategies
+                                            </li>
+                                            <li>Pre-screened and qualified candidates
+                                            </li>
+                                            <li>Faster hiring with less hassle
+                                            </li>
+                                            <li>Access exclusive job openings
+                                            </li>
                                         </ul>
                                     </div>
                                     <div className="col-md-6">
                                         <ul className="list-unstyled about-list text-muted">
-                                            <li> Create Resume</li>
+                                            <li>Career guidance from real experts
+                                            </li>
+                                            <li>Resume and interview support
+                                            </li>
                                             <li> and more...</li>
                                         </ul>
                                     </div>
@@ -78,7 +91,7 @@ function About() {
                         {/* <!--end col--> */}
                         <div className="col-lg-6">
                             <div className="about-img mt-4 mt-lg-0">
-                                <img src="/src/assets/images/about/about.jpg" alt="" className="w-75 text-center rounded"/>
+                                <img src={aboutImage} alt="" className="w-75 text-center rounded" />
                             </div>
                         </div>
                         {/* <!--end col--> */}

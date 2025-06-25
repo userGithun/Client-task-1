@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import clientLogo from '/src/assets/images/client-logo.png';
+import '../index.css'
 
 function Header() {
     return (
@@ -24,8 +26,7 @@ function Header() {
             <nav className="navbar mt-0 navbar-expand-lg fixed-top sticky " id="navbar">
                 <div className="container-fluid custom-container">
                     <Link className="navbar-brand text-dark fw-bold me-auto" to={'/'}>
-                        <img src="/src/assets/images/client-logo.png" height="80" alt="" className="custom-shadow" />
-                        {/* <img src="/src/assets/images/client-logo.png" height="22" alt="" className="logo-light" /> */}
+                        <img src={clientLogo} height="80" alt="" className="custom-shadow" />
                     </Link>
                     <div>
                         <button className="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
@@ -42,9 +43,20 @@ function Header() {
                             </li>
                             <li className="nav-item ">
                                 <Link to={'/about'} className="nav-link">
-                                    About Us
+                                    About
                                 </Link>
                             </li>
+                            <li className="nav-item ">
+                                <Link to={'/client'} className="nav-link">
+                                    Clients
+                                </Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link to={'/candidate'} className="nav-link">
+                                    Candidates
+                                </Link>
+                            </li>
+
                             <li className="nav-item ">
                                 <Link to={'/service'} className="nav-link">
                                     Services
@@ -60,6 +72,7 @@ function Header() {
                 {/* <!--end container--> */}
             </nav>
             {/* <!-- Navbar End --> */}
+
 
             {/* <!-- START SIGN-UP MODAL --> */}
             <div className="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
